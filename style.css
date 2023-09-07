@@ -6,7 +6,7 @@
     --botao-azul:#167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
-    --botao-azul-efeito: #3c29fa;
+    --botao-azul-efeito: #2b19f3;
 }
 
 body{
@@ -160,4 +160,24 @@ body{
 .container__botao:hover{
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
+}
+
+@media screen and (max-width: 1180px) {
+
+    .principal, .container, .dispositivos, .dispositivos__lista, .rodape, .rodape__lista{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10% 0;
+        height: 100%;
+    }
+
+    .rodape__logo{
+        width: 60%;
+        margin: 2em auto;
+    }
+
+    .container__caixa{
+        margin: 0;
+    }
 }
